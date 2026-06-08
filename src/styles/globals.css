@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+html, body {
+  -ms-overflow-style: none;
+  min-height: auto;
+}
+
+::selection {
+  background-color: rgba(14, 165, 233, 0.3);
+  color: inherit;
+}
+
+*:focus, *:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.glass-card {
+  background: rgba(23, 31, 51, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid #1e293b;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.active-glow {
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.2);
+  border-top: 2px solid #0ea5e9;
+}
+
+.modal-overlay {
+  background: rgba(6, 14, 32, 0.85);
+  backdrop-filter: blur(8px);
+}
